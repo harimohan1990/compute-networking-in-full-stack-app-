@@ -58,20 +58,7 @@ complete overview of how computer networking works with full-stack (frontend + b
 | CDN             | CloudFront (faster delivery)                 |
 | Networking      | VPC, Security Groups, NACLs (firewall rules) |
 
----
 
-## 🧱 Architecture Flow
-
-```mermaid
-graph LR
-A[Client Browser] -->|HTTPS Request| B[Route 53 DNS]
-B --> C[CloudFront CDN]
-C --> D[Load Balancer (ALB)]
-D --> E[EC2 / ECS App Server (Backend)]
-E --> F[Database (RDS/DynamoDB)]
-```
-
----
 
 ## 🔐 Security
 
